@@ -124,10 +124,17 @@ class App extends Component {
 
                 <Text style={styles.modalHeader}>Settings</Text>
                 <View style={styles.toLeft}>
-                  <Text style={styles.modalSubHeader}>Game Type</Text>
-                  <ModalDropdown options={["Blitz",""]}/>
 
-                  <Text style={styles.modalSubHeader}>Duration</Text>
+                  <Text style={styles.modalSubHeader}>Timer Type</Text>
+                  <ModalDropdown options={["Per Move","Per Player"]}/>
+
+                  <Text style={styles.modalSubHeader}>Game Type</Text>
+                  <ModalDropdown options={["Rapid","Blitz","Bullet"]}/>
+
+                  <Text style={styles.modalSubHeader}>Move Duration</Text>
+                  <ModalDropdown options={["1","2","3","4","5","10"]}/>
+
+                  <Text style={styles.modalSubHeader}>Game Duration</Text>
                   <Text >Minute </Text>
                   <ModalDropdown options={["5","10","15","20","25","30","35","40","45","50","55"]}/>
                   <Text >Hour </Text>
